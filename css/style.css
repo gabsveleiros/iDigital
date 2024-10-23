@@ -261,3 +261,24 @@ section{
     display: flex;
     align-items: center;
 }
+.about .content ul strong{
+    margin-right: 10px;
+    color: #600707;
+    font-weight: 200;
+}
+.about .content ul span{
+    color: #0c0b0b;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+.about .content p{
+    color: #520202;
+    font-family: "Poppins";
+    font-weight: 600;
+}
+.about .content ul i{
+    font-size: 16px;
+    margin-right: 5px;
+    color: #304052;
+    line-height: 0;
+}
