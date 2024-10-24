@@ -55,8 +55,8 @@ h1, h2, h3, h4, h5, h6{
 }
 #header .perfil .social-links i{
     font-size: 28px;
-    color: #150226d7;
-    background: #877f8e92;
+    color: #ffff;
+    background: #8a1e1e92;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6{
     transition: 0.3s;
 }
 #header .perfil .social-links i:hover{
-    color: #304052;
+    color: #e6e6e6;
     background: black;
     transition: all 0.3s;
 }
@@ -103,16 +103,24 @@ h1, h2, h3, h4, h5, h6{
     font-size: 15px;
 }
 /* icones  menu*/
-.nav-menu a i, .nav-menu a:focus i {
+.nav-menu a i,
+.nav-menu a:focus i {
     font-size: 24px;
     padding-right: 8px;
     color: #cdaaaacc;
 }
-.nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover>a {
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
     text-decoration: none;
     color: #f3c1c1e2;
 }
-.nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover>a i{
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover>a i {
     color:#563636; ;
 }
 /*Mobile Menu*/
@@ -120,7 +128,7 @@ h1, h2, h3, h4, h5, h6{
     position: fixed;
     right: 15px;
     top: 15px;
-    z-index: 24px;
+    z-index: 99999;
     border: 0;
     font-size: 24px;
     transition: all 0.4s;
@@ -145,16 +153,19 @@ h1, h2, h3, h4, h5, h6{
 /* resolução mobile */
 @media (max-width: 1199px) {
     #header {
-        left: -300px;
+      left: -300px;
     }
+  
     #main {
-        margin-left: 0;
+      margin-left: 0;
     }
-    .container, .container-fluid {
-        padding-left: 12px;
-        padding-right: 12px;
+  
+    .container,
+    .container-fluid {
+      padding-left: 12px;
+      padding-right: 12px;
     }
-}
+  }
 /*Hero*/
 #hero{
     width: 100%;
@@ -252,6 +263,7 @@ section{
     font-size: 26px;
     color: #260303;
 }
+
 .about .content ul{
     list-style: none;
     padding: 0;
@@ -281,4 +293,15 @@ section{
     margin-right: 5px;
     color: #304052;
     line-height: 0;
+}
+
+.about .img-fluid {
+    width: 200px;
+}
+
+/* em telas grandes o conteudo fica proximo a foto*/
+@media (min-width: 1024px) {
+    .about .content {
+        margin-left: -100px;
+    }
 }
